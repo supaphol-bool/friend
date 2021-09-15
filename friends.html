@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>friends</title>
+    <style>
+        body {
+            background-color: black;
+            animation: background3 12s infinite alternate;
+            animation: background3 12s infinite alternate;
+            animation: background3 12s infinite alternate;
+        }
+        
+        .box {
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 2%;
+            width: 60%;
+            height: 30%;
+            background: rgb(255, 255, 255, 0.3);
+            box-shadow: 10px 10px 15px pink;
+            margin-left: 20%;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+        
+        .box2 {
+            border: 5px solid purple;
+            border-radius: 30px;
+            box-shadow: 5px 5px 7px purple;
+            margin-left: 15%;
+            width: 70%;
+            height: 90%;
+        }
+        
+        .content {
+            border: 5px solid wheat;
+            border-radius: 30px;
+            padding: 30%;
+            width: 230%;
+            background: rgb(255, 255, 255, 0.5);
+            margin-top: 15%;
+            margin-left: -65.5%;
+            margin-bottom: -70%;
+            box-shadow: 5px 5px 7px wheat;
+        }
+        
+        .text {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+        
+        .textcenter {
+            text-align: center;
+            font-size: 40px;
+            margin-top: -3%;
+        }
+        
+        h1 {
+            margin-top: 2%;
+            text-align: center;
+            color: black;
+            animation: image 12s infinite alternate;
+            animation: image 12s infinite alternate;
+            animation: image 12s infinite alternate;
+        }
+        
+        @keyframes image {
+            0% {
+                color: purple;
+            }
+            10% {
+                color: darkblue;
+            }
+            20% {
+                color: blue;
+            }
+            30% {
+                color: green;
+            }
+            40% {
+                color: greenyellow;
+            }
+            50% {
+                color: yellow;
+            }
+            60% {
+                color: orangered;
+            }
+            70% {
+                color: red;
+            }
+            80% {
+                color: palevioletred;
+            }
+            90% {
+                color: pink;
+            }
+            100% {
+                color: white;
+            }
+        }
+        
+        @keyframes background3 {
+            0% {
+                background-color: black;
+            }
+            25% {
+                background-color: purple;
+            }
+            50% {
+                background-color: darkblue;
+            }
+            75% {
+                background-color: blue;
+            }
+            100% {
+                background-color: black;
+            }
+        }
+        
+        .aud {
+            border: 5px solid gold;
+            border-radius: 50px;
+            box-shadow: 5px 5px 7px gold;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>FRIENDS <span class="badge badge-pill badge-warning textcenter">Photo</span></h1>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="box2" src="one.jpg" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img class="box2" src="et.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img class="box2" src="three.jpg" alt="New York">
+            </div>
+            <div class="carousel-item">
+                <img class="box2" src="four.jpg" alt="New York">
+            </div>
+            <div class="carousel-item">
+                <img class="box2" src="fft.jpg" alt="New York">
+            </div>
+            <div class="carousel-item">
+                <img class="box2" src="ten.jpg" alt="New York">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="box">
+        <h1 class="textcenter">Memories</h1>
+        <audio controls class="aud">
+            <source src="a.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+
+</html>
